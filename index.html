@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+        <link rel="shortcut icon" type="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+        <div class="menu-icon text-end px-3 pt-2">
+            <img src="img/logo.png" alt="" class="logo" />
+            <i id="openMenu" class="fas fa-bars fs-3"></i>
+        </div>
+        <div id="menuList" class="menu-list d-none">
+            <ul class="list-unstyled p-3">
+                <li><a href="#" onclick="showSearch()">Search</a></li>
+                <li><a href="#" onclick="getCategories()">Categories</a></li>
+                <li><a href="#" onclick="getArea()">Area</a></li>
+                <li><a href="#" onclick="getIngredients()">Ingredients</a></li>
+                <li><a href="#" onclick="showContact()">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sidebar-bottom-icons">
+        <a href="#" class="d-block mb-3 text-center"><i class="fas fa-globe fa-2x"></i></a>
+        <a href="#" class="d-block text-center"><i class="fas fa-share-alt fa-2x"></i></a>
+    </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container py-5" id="contentContainer">
+        <div class="row" id="mealData">
+            <!-- Meals will appear here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

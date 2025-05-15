@@ -1,0 +1,140 @@
+body {
+  background-color: #000;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60px;
+  background-color: #111;
+  transition: width 0.3s;
+  z-index: 999;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.sidebar .menu-list {
+  transition: all 0.3s ease-in-out;
+   display: block;
+}
+
+.sidebar .menu-list a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.sidebar .menu-list a:hover {
+  background-color: #333;
+}
+
+.meal-card {
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.meal-card:hover {
+  transform: scale(1.05);
+}
+
+.meal-card {
+  background-color: #1a1a1a;
+  color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+.meal-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+img.logo {
+  font-size: 2px;
+  margin-top: 5rem;
+}
+
+.menu-list.d-none {
+  display: none;
+}
+
+/* Logo */
+.logo-container {
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 10rem auto;
+  text-align: center;
+  display: block;
+  left: 10rem;
+  display: block;
+}
+
+/* FontAwesome */
+.sidebar-bottom-icons {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+}
+
+.sidebar-bottom-icons a {
+  color: #fff;
+  font-size: 0.5rem;
+  transition: color 0.2s;
+}
+
+.sidebar-bottom-icons a:hover {
+  color: #00f2ff;
+}
+
+/* Contact Style */
+#contactForm {
+  margin-top: 40px;
+}
+
+#contactForm input.form-control {
+  background: #d7d7d7;
+  color: #000000;
+  border: 2px solid #222;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  padding: 12px;
+}
+
+#contactForm input.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 2px #0d6efd33;
+  color: #000000;
+}
+
+#contactForm .alert-danger {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  text-align: center;
+  border-radius: 10px;
+  background: #f8d7da;
+  color: #842029;
+  border: none;
+}
+
+#submitBtn {
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 8px 40px;
+  margin-top: 10px;
+}
